@@ -5,7 +5,7 @@ import Cards from './others/Cards'
 
 export default function Business() {
   return (
-    <section id="business" className={`${layout.section}`}>
+    <section id="business" className={`${layout.section} `}>
       <Dets />
       <Cards />
     </section>

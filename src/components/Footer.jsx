@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row border-b-1 pb-8 w-full">
           <div className="items-start flex flex-1 flex-col">
             <img src={logo} className='w-[220px] h-[70px] mb-4'/>
-            <p className={`${styles.paragraph} max-w-[420px]`}>A new way to make the paymnets easy,reliable and secure.</p>
+            <p className={`${styles.paragraph} mb-4 max-w-[420px]`}>A new way to make the paymnets easy,reliable and secure.</p>
           </div>
 
 
@@ -20,7 +20,7 @@ export default function Footer() {
                 <h4 className='text-poppins text-semibold text-[20px] leading-{24px] text-white mb-2'>{dets.title}</h4>
                 <ul className="list-none">
                   {dets.links.map((link,index) => {
-                    return <li key={link.name} className='text-poppins mb-2 text-normal text-[16px] leading-{24px] text-dimWhite hover:text-secondary cursor-pointer' >
+                    return <li key={link.name} className='text-poppins mb-2 text-normal text-[14px] ss:text-[16px] leading-{24px] text-dimWhite hover:text-secondary cursor-pointer' >
                       {link.name}
                     </li>
                   })}
@@ -31,10 +31,10 @@ export default function Footer() {
         </div>
       
 
-      <div className={`w-full flex md:flex-row justify-between items-center pt-8 border-t-2 `}>
-          <p className={`${styles.paragraph}`}>Copyright &copy; 2021 HooBank. All Rights Reserved.</p>
+      <div className={`w-full flex flex-col md:flex-row justify-between items-center pt-8 border-t-2 `}>
+          <p className={`${styles.paragraph} mb-3`}>Copyright &copy; 2021 HooBank. All Rights Reserved.</p>
 
-          <div className="flex flex-col md:flex-row items-center space-x-8 cursor-pointer">
+          <div className="flex  md:flex-row items-center space-x-8 cursor-pointer">
             {socialMedia.map((social) => {
               return <img key={social.id} src={social.icon} onClick={() => window.open(social.link)} />
             })}
