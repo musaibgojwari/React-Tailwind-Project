@@ -4,9 +4,10 @@ import TestimonialsDets from './others/TestimonialsDets'
 import TestimonialsPosts from './others/TestimonialsPosts'
 export default function Testimonials() {
   return (
-    <section id="testimonials" className={`flex flex-col`}>
+    <section id="testimonials" className={`${styles.paddingY} ${styles.flexCenter} flex-col`}>
        <TestimonialsDets />
        <TestimonialsPosts />
   </section>
   )
 }
+ 

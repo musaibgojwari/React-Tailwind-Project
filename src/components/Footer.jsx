@@ -34,9 +34,9 @@ export default function Footer() {
       <div className={`w-full flex md:flex-row justify-between items-center pt-8 border-t-2 `}>
           <p className={`${styles.paragraph}`}>Copyright &copy; 2021 HooBank. All Rights Reserved.</p>
 
-          <div className="flex flex-col md:flex-row items-center space-x-4">
+          <div className="flex flex-col md:flex-row items-center space-x-8 cursor-pointer">
             {socialMedia.map((social) => {
-              return <img key={social.id} src={social.icon} />
+              return <img key={social.id} src={social.icon} onClick={() => window.open(social.link)} />
             })}
           </div>
       </div>
